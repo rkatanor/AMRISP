@@ -1,0 +1,2 @@
+# AMRISP
+all about internet
