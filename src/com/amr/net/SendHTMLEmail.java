@@ -15,9 +15,9 @@ public class SendHTMLEmail {
       String to = "prasu.lilly@gmail.com";
 
       // Sender's email ID needs to be mentioned
-      String from = "rajkumar050289@gmail.com";
-      final String username = "rajkumar050289@gmail.com";//change accordingly
-      final String password = "Lilly1247";//change accordingly
+      String from = "rkatanor@gmail.com";
+      final String username = "rkatanor@gmail.com";//change accordingly
+      final String password = "Lilly$12471266";//change accordingly
 
       // Assuming you are sending email through relay.jangosmtp.net
       String host = "smtp.gmail.com";

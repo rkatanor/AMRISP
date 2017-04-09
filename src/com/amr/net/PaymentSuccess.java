@@ -57,8 +57,12 @@ public class PaymentSuccess extends HttpServlet {
 			  String u_email=(String) session.getAttribute("cust_email");
 			  System.out.println(u_email);
 			  zeroingAmount(u_name);
-			  sendSMS(u_mobile);
+			  System.out.println("Due amount cleared:::");
+			  sendSMS(u_mobile,u_name);
+			  System.out.println("----Confirmation SMS has been sent to User");
+			  System.out.println("----Confirmation SMS has been sent to AMR admin");
 			  sendMail(u_email);
+			  System.out.println("----Acknowledgment has been sent to user registered email id ");
 			  
 			 
 	        	response.sendRedirect("http://www.amrfibernet.in/amrhome/PlanServlet"); 
@@ -94,17 +98,17 @@ public class PaymentSuccess extends HttpServlet {
 		
 		}  
 	
-	public static void sendSMS(String usermobile){
+	public static void sendSMS(String usermobile,String serviceuser){
 		 bulksms.usersms(usermobile);
-		  bulksms.adminsms("9949459593");
+		  bulksms.adminsms("9949459593",serviceuser);
 	}
 	public static void sendMail(String email){
 		 String to = email;
 
 	      // Sender's email ID needs to be mentioned
-	      String from = "rajkumar050289@gmail.com";
-	      final String username = "rajkumar050289@gmail.com";//change accordingly
-	      final String password = "Lilly1247";//change accordingly
+	      String from = "amrfiber@gmail.com";
+	      final String username = "amrfiber@gmail.com";//change accordingly
+	      final String password = "kata@1212AMR";//change accordingly
 
 	      // Assuming you are sending email through relay.jangosmtp.net
 	      String host = "smtp.gmail.com";
@@ -147,7 +151,7 @@ public class PaymentSuccess extends HttpServlet {
 	             "text/html");
 		   message.setContent(
 				   
-		              "<h3>This is the acknowledge to your Bill Payment towards AMR Fibernet.Your payment of INR 600 has been received successfully</h3>",
+		              "<h3><i>This is the acknowledge to your Bill Payment towards AMR Fibernet.Your payment of INR 600 has been received successfully</i></h3>",
 		             "text/html");
 		   
 		   

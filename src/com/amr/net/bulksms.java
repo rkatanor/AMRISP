@@ -9,7 +9,7 @@ import java.net.URLEncoder;
 import java.util.Random;
 
 public class bulksms {
-	public static String adminsms(String adminmobile){
+	public static String adminsms(String adminmobile, String amrusername){
 		
 		try 
 		{
@@ -18,7 +18,7 @@ public class bulksms {
 		String phonenumbers=adminmobile;
 		String data="user=" + URLEncoder.encode("amrfibernet", "UTF-8");
 		data +="&password=" + URLEncoder.encode("9949459593", "UTF-8");
-		data +="&message=" + URLEncoder.encode("AMR Fibernet:Dear admin,bill payment of RS:600 is credited to AMR Fibernet account towards user:Lilly.Please logon to PAYUMONEY for more details. ", "UTF-8");
+		data +="&message=" + URLEncoder.encode("AMR Fibernet:Dear admin,bill payment of RS:600 is credited to AMR Fibernet account towards user:"+amrusername+".Please logon to PAYUMONEY for more details. ", "UTF-8");
 		data +="&sender=" + URLEncoder.encode("AMRNet", "UTF-8");
 		data +="&mobile=" + URLEncoder.encode(phonenumbers, "UTF-8");
 		data +="&type=" + URLEncoder.encode("3", "UTF-8");
