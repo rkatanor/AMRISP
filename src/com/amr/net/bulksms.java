@@ -16,6 +16,7 @@ public class bulksms {
 	
 		// Construct d1ata
 		String phonenumbers=adminmobile;
+		System.out.println("admin mobile number"+phonenumbers);
 		String data="user=" + URLEncoder.encode("amrfibernet", "UTF-8");
 		data +="&password=" + URLEncoder.encode("9949459593", "UTF-8");
 		data +="&message=" + URLEncoder.encode("AMR Fibernet:Dear admin,bill payment of RS:600 is credited to AMR Fibernet account towards user:"+amrusername+".Please logon to PAYUMONEY for more details. ", "UTF-8");
