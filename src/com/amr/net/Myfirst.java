@@ -22,6 +22,7 @@ public class Myfirst extends HttpServlet {
      */
     public Myfirst() {
         // TODO Auto-generated constructor stub
+    	
     }
 
 	/**
@@ -34,6 +35,8 @@ public class Myfirst extends HttpServlet {
 	      // Actual logic goes here.
 	      PrintWriter out = response.getWriter();
 	      String message="Welcome to AMR FIBER NET";
+	      
+	      System.out.println("request..came");
 		out.println("<h1>" + message + "</h1>");
 	}
 
