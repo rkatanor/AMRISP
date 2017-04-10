@@ -146,7 +146,7 @@ So, get ready to do more online and discover the Incredible every day!
                             </div>
                             <div class="media-body">
                                 <blockquote>AMR Fibernet is a good service provider.It really helps me everytime if I need internet.</blockquote>
-                                <h3><a href="#">- Rajkumar Katanor</a></h3>
+                                <h3><a href="#">- Siva Nulakani</a></h3>
                             </div>
                          </div>
                         <div class="media">
