@@ -100,7 +100,7 @@ public class PaymentSuccess extends HttpServlet {
 	
 	public static void sendSMS(String usermobile,String serviceuser){
 		 bulksms.usersms(usermobile);
-		  bulksms.adminsms("9063955566",serviceuser);
+		  bulksms.adminsms("9949459593",serviceuser);
 	}
 	public static void sendMail(String email){
 		 String to = email;
