@@ -11,7 +11,7 @@ public class javamail {
 
 
 String d_email = "rajkumar050289@gmail.com",
-d_password = "Lilly1247",
+d_password = "KKK",
 d_host = "smtp.gmail.com",
 d_port = "465";
 public javamail() { }
