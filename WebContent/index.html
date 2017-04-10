@@ -75,7 +75,7 @@
             <div class="row">
                 <div class="main-slider">
                     <div class="slide-text">
-                        <h1>We know you're world</h1>
+                        <h1>We know your world</h1>
                         <P>
                         We at AMR Fibernet understand that the perfect internet connection is not only about high speed. 
 It is the perfect combination of incredible speed and incredible FUP, which together deliver an Incredible Internet experience.
